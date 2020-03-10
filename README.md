@@ -1,3 +1,2 @@
 # self-calibre
-
-# This is Algorithm for solving BaekJoon Problem.
+# This is program of algorithm for solving BaekJoon problem.
