@@ -19,19 +19,25 @@ int main(void)
 	for (int tc = 1; tc <= T; tc++)
 	{
 		scanf("%d %d", &N, &M);
+
+	// 1st Solution
+	/*
 		if (N * 2 > M)
-		{
 			N = M - N;
-		}
 		
-		for (int i = M; i >= M - (N - 1); i--)
-		{
+		for (int i = M; i >= M - (N - 1); i--)	// mPn = m * (m-1) * (m-2) * ... * (m-(n-1))
 			result *= i;
-		}
-		for (int i = N; i >= 1; i--)
-		{
+
+		for (int i = N; i >= 1; i--)	// mPn / n!
 			result /= i;
-		}
+	*/
+	
+	// 2nd Solution
+		dp[N][N] = 1;
+		dp[N][N - 1] = N;
+		for (int i = N + 1; i <= M; i++)
+			dp[i][N] = dp[i - 1][N - 1] + dp[i - 1][N];
+		result = dp[M][N];
 
 		printf("%lld\n", result);
 	}
