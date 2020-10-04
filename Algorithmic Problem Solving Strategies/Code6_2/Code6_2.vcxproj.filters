@@ -15,11 +15,11 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="nCr.cpp">
-      <Filter>리소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="nCr2.cpp">
-      <Filter>리소스 파일</Filter>
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="nCr.cpp">
+      <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

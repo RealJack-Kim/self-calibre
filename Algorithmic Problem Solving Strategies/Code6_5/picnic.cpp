@@ -2,7 +2,8 @@
 #define  _CRT_SECURE_NO_WARNINGS
 #endif
 
-#include <stdio.h>
+#include <cstdio>
+#include <cstring>
 #include <iostream>
 using namespace std;
 
@@ -45,21 +46,22 @@ int countPairing(int n)
 
 int main()
 {
-	int tcnum;
+	int T;
 
 	FILE* fp = freopen("input.txt", "r", stdin);
 	setbuf(stdout, NULL);
 
-	// cout << "num of TC : ";
-	cin >> tcnum;
+	// cout << "num of TestCase : ";
+	cin >> T;
 
-	for (int tc = 0; tc < tcnum; tc++)
+	for (int tc = 0; tc < T; tc++)
 	{
 		int n, pairnum;
 
 		// cout << "num of student & pair : ";
 		cin >> n >> pairnum;
-		
+
+		memset(areFriend, false, sizeof(areFriend));
 		// cout << "input pair : ";
 		for (int i = 0; i < pairnum; i++)
 		{

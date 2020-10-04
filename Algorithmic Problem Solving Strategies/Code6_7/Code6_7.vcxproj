@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{84D762A0-55CD-44BC-9045-B2AB48100368}</ProjectGuid>
-    <RootNamespace>Code66</RootNamespace>
+    <ProjectGuid>{537BA6DE-7F16-4FD5-9599-51492D242628}</ProjectGuid>
+    <RootNamespace>Code67</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -138,7 +138,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BoardCover.cpp" />
+    <ClCompile Include="TSP.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />
